@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <style>
+     
+      header {
+        height: 80px;
+        background-color: #333;
+        color: #fff;
+        padding: 0 30px;
+        display: block;
+        
+      }
+
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding-top: 20px;
+        font-family: 'Trebuchet MS', sans-serif;
+      }
+      nav {
+        display: block;
+        margin-top: 20px;
+        background-color: #ffffff;
+        height: 50px;
+      }
+
+      nav ul {
+        list-style: none;
+        
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin: 0 10px;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .about,.about1,.about2{
+        margin-left: 20px;
+        line-height: 25px;
+        font-size: 20px;
+        margin-right:20px;
+      }
+
+      footer {
+     background-color: #333;
+     padding-left: 50px;
+     color:#fff;
+}
+  
+.fa {
+  font-size: 15px;
+  width: 20px;
+  
+  text-decoration: none;
+} 
+.fa-facebook {
+  background: #333;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #333;
+  color: white;
+  padding-top: 5px;
+}
+
+.fa-instagram{
+  background: #333;
+  color: white;
+  padding-top: 5px;
+}
+
+.profile:hover,.cart:hover{
+      cursor:pointer;
+      opacity:0.9px;
+
+    }
+
+    .profile,.cart{
+      height:30px;
+      width:30px;
+      margin-top:6px;
+      margin-left:20px;
+      vertical-align: middle;
+    }
+    .search{
+      float:left;
+      vertical-align: bottom;
+      margin-top:10px;
+      padding:5px;
+      border-width: 0px;
+      border-style:none;
+      border-radius:1px;
+
+    }
+
+    .btn-search:hover{
+        background-color: #333;
+        color: #fff;
+
+    }
+
+    .logout{
+      font-size:20px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+      padding-bottom: 5px;
+      margin-top:10px;
+      }
+      .a{
+        color:white;
+        
+        padding-left: 15px;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Flavouristic
+        <div style="display: inline-block;margin-left:670px;">
+          
+          <input type="text"  placeholder="Search.." name="search" class="search">
+          <button type="submit" style="float:left;vertical-align: bottom;margin-top:8px;padding:5px;border-radius:1px;" class="btn-search"><i class="fa fa-search"></i></button>
+          <img src="images\carts.png" alt="User" class="cart">
+          <p class="logout"><a href="signup.html" class="a">Log out</a></p>
+      </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Admin_home.html">Home</a></li>
+        <li><a href="View_orders.php">Orders</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1 style="margin-left: 20px;">
+        About:
+      </h1>
+      <p class="about">
+        Welcome to Flavouristic, where every baked good is made with love and passion. We believe in using only the freshest ingredients 
+        to create our delicious treats, from our signature cakes to our artisan breads. Our team of skilled bakers and pastry chefs bring a wealth of experience and creativity to every recipe, ensuring that every bite is a delightful experience. 
+        Whether you're looking for a special cake for a celebration or simply want to indulge in something sweet, we have something for everyone. Come visit us and discover the joy of Flavouristic!
+      </p>
+      <img src="images\pic1.jpg" style="width:400px;margin-left:150px;margin-top: 30px;">
+      <img src="images\pic2res.jpg" style="width:450px;margin-left:150px;height: 319px;">
+      <p class="about1">
+        At Flavouristic, we believe that food is more than just sustenance – it's an experience that brings people together. 
+        That's why we're passionate about creating baked goods that not only taste amazing, but also look beautiful. 
+        From our intricate cake designs to our delicious pastries, we strive to make every item a work of art. We also offer a variety of gluten-free and vegan options, so that everyone can enjoy our treats.
+      </p>
+      
+      <p class="about2">
+        At our bakery, we pride ourselves on providing excellent customer service. 
+        Whether you need help selecting the perfect cake for a special occasion, or simply want to try something new, our friendly and knowledgeable staff are here to assist you. 
+        We're committed to making your visit to Flavouristic a memorable one, and we look forward to sharing our passion for baking with you.
+      </p>
+    </div>
+    <footer>
+        <div style="display:inline-block">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fa fa-map-marker"></i> Flat no:34, Westworld Apartments, Vadavalli, Coimbatore</li>
+          <li style="padding-top: 5px;"><i class="fa fa-phone"></i> 8754371117</li>
+          <li style="padding-top: 5px;"><i class='fa fa-info' style="padding-left: 2px;"></i> info@flavouristic.com</li>
+        </ul>
+    </div>
+    <div style="display: inline-block;margin-left:300px">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li><a href="#" class="fa fa-facebook"></a>Facebook</li>
+          <li><a href="#" class="fa fa-twitter"></a>Twitter</li>
+          <li><a href="#" class="fa fa-instagram"></a>Instagram</li>
+        </ul>
+    </div>
+      </footer>
+      
+  </body>
+</html>
